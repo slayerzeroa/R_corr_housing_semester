@@ -82,12 +82,12 @@ library(ggplot2)
 # 데이터랩 받아오기
 
 for (j in univ.names){
-  datalab.1 <- read.csv(file=sprintf("C:/Users/PSYDUCK/OneDrive - 아주대학교/바탕 화면/SCHOOL LIFE/UNIVERSITY/과제쓰/3-1/빅데이터개론/프로젝트/자료/%s/%s_2016_데이터랩.csv", j, j), header=T)
-  datalab.2 <- read.csv(file=sprintf("C:/Users/PSYDUCK/OneDrive - 아주대학교/바탕 화면/SCHOOL LIFE/UNIVERSITY/과제쓰/3-1/빅데이터개론/프로젝트/자료/%s/%s_2017_데이터랩.csv", j, j), header=T)
-  datalab.3 <- read.csv(file=sprintf("C:/Users/PSYDUCK/OneDrive - 아주대학교/바탕 화면/SCHOOL LIFE/UNIVERSITY/과제쓰/3-1/빅데이터개론/프로젝트/자료/%s/%s_2018_데이터랩.csv", j, j), header=T)
-  datalab.4 <- read.csv(file=sprintf("C:/Users/PSYDUCK/OneDrive - 아주대학교/바탕 화면/SCHOOL LIFE/UNIVERSITY/과제쓰/3-1/빅데이터개론/프로젝트/자료/%s/%s_2019_데이터랩.csv", j, j), header=T)
-  datalab.5 <- read.csv(file=sprintf("C:/Users/PSYDUCK/OneDrive - 아주대학교/바탕 화면/SCHOOL LIFE/UNIVERSITY/과제쓰/3-1/빅데이터개론/프로젝트/자료/%s/%s_2020_데이터랩.csv", j, j), header=T)
-  datalab.6 <- read.csv(file=sprintf("C:/Users/PSYDUCK/OneDrive - 아주대학교/바탕 화면/SCHOOL LIFE/UNIVERSITY/과제쓰/3-1/빅데이터개론/프로젝트/자료/%s/%s_2021_데이터랩.csv", j, j), header=T)
+  datalab.1 <- read.csv(file=sprintf("./data/%s/%s_2016_데이터랩.csv", j, j), header=T)
+  datalab.2 <- read.csv(file=sprintf("./data/%s/%s_2017_데이터랩.csv", j, j), header=T)
+  datalab.3 <- read.csv(file=sprintf("./data/%s/%s_2018_데이터랩.csv", j, j), header=T)
+  datalab.4 <- read.csv(file=sprintf("./data/%s/%s_2019_데이터랩.csv", j, j), header=T)
+  datalab.5 <- read.csv(file=sprintf("./data/%s/%s_2020_데이터랩.csv", j, j), header=T)
+  datalab.6 <- read.csv(file=sprintf("./data/%s/%s_2021_데이터랩.csv", j, j), header=T)
   datalab <- rbind(datalab.1, datalab.2)
   datalab <- rbind(datalab, datalab.3)
   datalab <- rbind(datalab, datalab.4)
